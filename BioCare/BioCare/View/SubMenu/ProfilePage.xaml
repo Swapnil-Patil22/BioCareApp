@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioCare.View.SubMenu.ProfilePage" 
+             xmlns:local="clr-namespace:BioCare;assembly=BioCare"
+          xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"  
+             BackgroundColor="White"           
+             Title="My Profile" >
+
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout VerticalOptions="StartAndExpand" Padding="10, 10, 10, 0" BackgroundColor="White">
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="End" >
+
+                    <Image  x:Name="PenEditImg" Source="edit.png " HorizontalOptions="End" WidthRequest="20" HeightRequest="20" IsVisible="True">
+                    </Image>
+
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="End">
+                    <!--<Image x:Name="SaveImg" Source="save.png " HorizontalOptions="Start" WidthRequest="20" HeightRequest="20" IsVisible="True">
+                    </Image>-->
+                    <Image  x:Name="closeImage" Source="close.png " HorizontalOptions="End" WidthRequest="20" HeightRequest="20" IsVisible="False">
+                    </Image>
+                </StackLayout>
+
+                <controls:CircleImage BorderColor="#0E197C" BorderThickness="2" Aspect="AspectFill" x:Name="ProfileImage"  WidthRequest="200" HeightRequest="200" VerticalOptions="Center" HorizontalOptions="Center" >
+                    <Image.Source>
+                        <OnPlatform x:TypeArguments="ImageSource"
+                              iOS="menimage.jpg"
+                              Android="menimage.jpg" />
+                    </Image.Source>
+                
+                </controls:CircleImage>
+
+                <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand" Padding="110,0,0,0">
+                    <Image x:Name="GalleryBigImg" Source="gallerybig.png " WidthRequest="20" HeightRequest="20" IsVisible="False">
+                    </Image>
+                </StackLayout>
+
+            <!--<StackLayout VerticalOptions="CenterAndExpand"  Spacing="0" Padding="110,0,0,0">
+                <Image x:Name="SettingImg" Source="settings.png " WidthRequest="30" HeightRequest="30" IsVisible="False">
+
+                </Image>
+  
+                </StackLayout>-->
+
+                <BoxView Color="Transparent" HeightRequest="5"/>
+
+               
+                <StackLayout VerticalOptions="StartAndExpand"  Spacing="0" >
+
+                    <local:CustomEntry1 x:Name="EName" HorizontalTextAlignment="Center" Placeholder="NAME" PlaceholderColor="#0E197C" FontSize="Large" IsEnabled="False"/>
+
+                    <BoxView  Color="Transparent" HeightRequest="2"/>
+                    <local:CustomEntry1 x:Name="EEmail" HorizontalTextAlignment="Center" Placeholder="EMAIL" FontSize="Small" IsEnabled="False"/>
+
+                    <BoxView Color="Transparent" HeightRequest="2"/>
+                    <local:CustomEntry1 x:Name="EUser" HorizontalTextAlignment="Center" Placeholder="Phone Number"  FontSize="Small" IsEnabled="False"/>
+
+                </StackLayout>
+           
+
+              
+
+                <!--<StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" >
+                    <Image x:Name="GalleryBigImg" Source="gallerybig.png " WidthRequest="20" HeightRequest="20" IsVisible="True">
+                    </Image>
+                </StackLayout>-->
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Padding="5, 5, 5, 0">
+                <Button x:Name="btnConfirm" Text="Confirm" TextColor="White" BackgroundColor="#0E197C" FontSize="Small" HorizontalOptions="Center" Clicked="EditProfileConfirm_OnClicked" IsVisible="False"/>               
+            </StackLayout>
+
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+
+</ContentPage>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <color name="ListViewSelected">#C3C2BF</color>
+  <color name="ListViewHighlighted">#28b62c</color>
+
+</resources>

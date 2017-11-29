@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioCare.View.SubMenu.CalendarPage"
+              xmlns:CalendarSample="clr-namespace:Syncfusion.SfCalendar.XForms;assembly=Syncfusion.SfCalendar.XForms"
+             Title="Calendar">
+
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout>
+            <CalendarSample:SfCalendar x:Name="calendar" />
+
+                <BoxView Color="Transparent" HeightRequest="10"/>
+            
+                <Frame  Padding="1,1,1,1" BackgroundColor="#0E197C" Margin="16">
+                    
+                        <StackLayout BackgroundColor="White">
+                            <StackLayout Grid.Row="0" BackgroundColor="Transparent" Orientation="Vertical"  Padding="10, 0, 0, 0">
+                                <!--<Label  Text="Date"  FontSize="20" HeightRequest="30" HorizontalOptions="Start" TextColor="#0E197C"  />-->
+                                <Label  x:Name="SelectDate" IsEnabled="False" TextColor="Black" FontSize="Medium"/>
+                            </StackLayout>
+
+                        <BoxView Color="Transparent" HeightRequest="10"/>
+
+                        <Frame  Padding="1,1,1,1" BackgroundColor="#0E197C" Margin="5">
+                            <StackLayout BackgroundColor="White">
+                                <StackLayout BackgroundColor="Transparent" Orientation="Horizontal"   Padding="10, 0, 0, 0">
+                                    <Label x:Name="CTime"  FontSize="20"  HorizontalOptions="StartAndExpand" TextColor="#0E197C" IsEnabled="False"/>
+                                    <Label x:Name="BNo"  FontSize="20"  HorizontalOptions="StartAndExpand" TextColor="#0E197C" IsEnabled="False"/>
+
+                                </StackLayout>
+
+                                <StackLayout BackgroundColor="Transparent" Padding="110,0,0,0">
+                                    <Label x:Name="Loc"    FontSize="20"  HorizontalOptions="CenterAndExpand"  TextColor="#0E197C" IsEnabled="False" />
+                                </StackLayout>
+                            </StackLayout>
+                        </Frame>
+
+                        </StackLayout>
+                    
+                </Frame>
+                
+            
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+
+</ContentPage>

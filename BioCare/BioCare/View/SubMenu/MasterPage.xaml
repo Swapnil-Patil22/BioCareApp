@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioCare.View.SubMenu.MasterPage"
+                  BackgroundColor="#0E197C"
+                   xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions">
+    <MasterDetailPage.Master>
+        <ContentPage Title="Menu" BackgroundColor="White">
+            <StackLayout Orientation="Vertical" >
+                
+                
+                <!-- 
+             This StackLayout you can use for others
+             data that you want to have in your menu drawer
+        -->
+                <StackLayout Orientation="Horizontal" Padding="10,20,10,20" Spacing="0" HorizontalOptions="FillAndExpand" BackgroundColor="#0E197C" VerticalOptions="Center">
+                    <StackLayout Orientation="Vertical" Spacing="0" HorizontalOptions="StartAndExpand" BackgroundColor="#0E197C" VerticalOptions="EndAndExpand">
+                        <Label x:Name="masterPageUser" Text="Sang" FontSize="Small" TextColor="White" HorizontalOptions="Start"/>
+                        <Label x:Name="masterPageMail" Text="sang@gmail.com" FontSize="Micro" HorizontalOptions="Start" TextColor="White"/>
+                        
+                    </StackLayout>
+                    <StackLayout Orientation="Vertical" Spacing="0" HorizontalOptions="CenterAndExpand" BackgroundColor="#0E197C">
+                        <controls:CircleImage Source="menimage.jpg"  x:Name="userImage" Aspect="AspectFit" WidthRequest="80" HeightRequest="80" HorizontalOptions="EndAndExpand" VerticalOptions="Center"/>
+                    </StackLayout>
+                </StackLayout>
+
+                <ListView x:Name="navigateDrawerList" SelectedItem="{Binding SelectedItem}" ItemsSource="{Binding List}"
+                  RowHeight="60"
+                  SeparatorVisibility="None"
+                  BackgroundColor="White"
+                  ItemTapped="OnMenuItemTappedAsync"
+                          >
+
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell x:Name="ColorChange"  ><!--Tapped="ViewCell_Tapped"-->
+
+                                <StackLayout VerticalOptions="FillAndExpand"
+                             Orientation="Horizontal"
+                             Padding="20,10,0,10"
+                             Spacing="10" x:Name="ChangeColor">
+
+                                    <Image Source="{Binding Icon}"
+                         WidthRequest="30"
+                         HeightRequest="30"
+                         VerticalOptions="Center" />
+
+                                    <Label x:Name="colorLabel" Text="{Binding Title}" 
+                         FontSize="Small"
+                         VerticalOptions="Center" 
+                         TextColor="#0E197C"
+                         />
+
+                                </StackLayout>
+
+                                <!--<Grid Padding="20,10,0,10" VerticalOptions="FillAndExpand" RowSpacing="10" ColumnSpacing="10" >
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="20"></RowDefinition>
+                                        <RowDefinition Height="20"></RowDefinition>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"></ColumnDefinition>
+                                        <ColumnDefinition Width="*"></ColumnDefinition>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Image Grid.Row="0"  Grid.Column="0"  Source="{Binding Icon}" />
+                                    <Label Grid.Row="0" Grid.Column="1"  Text="{Binding Title}" FontSize="Small"  TextColor="{Binding TextColor}" ></Label>
+
+
+                                </Grid>-->
+
+                            </ViewCell>
+
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+                <StackLayout Orientation="Horizontal" Spacing="0" HorizontalOptions="CenterAndExpand" Padding="20,10,0,10">
+                    <Image WidthRequest="80" HeightRequest="80" VerticalOptions="StartAndExpand">
+                        <Image.Source>
+                            <OnPlatform x:TypeArguments="ImageSource"                              
+                              Android="homepagepicture.jpg" />
+                        </Image.Source>
+                    </Image>
+                </StackLayout>
+            </StackLayout>
+        </ContentPage>
+    </MasterDetailPage.Master>
+
+    <MasterDetailPage.Detail>
+        <NavigationPage>
+
+        </NavigationPage>
+    </MasterDetailPage.Detail>
+
+
+</MasterDetailPage>

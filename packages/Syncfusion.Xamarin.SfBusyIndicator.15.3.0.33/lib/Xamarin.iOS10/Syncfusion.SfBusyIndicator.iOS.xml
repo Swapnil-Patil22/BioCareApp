@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.SfBusyIndicator.iOS</name>
+    </assembly>
+    <members>
+        <member name="T:Syncfusion.SfBusyIndicator.iOS.SFBusyIndicatorAnimationType">
+             <summary>
+             Contains the values for the AnimationTypes enumeration that contains various built in animations graphics.
+             </summary>
+            </member>
+        <member name="F:Syncfusion.SfBusyIndicator.iOS.SFBusyIndicatorAnimationType.SFBusyIndicatorAnimationTypeBall">
+             <summary>
+             Busy indication with jumping ball type animation.
+             </summary>
+            </member>
+        <member name="F:Syncfusion.SfBusyIndicator.iOS.SFBusyIndicatorAnimationType.SFBusyIndicatorAnimationTypeBattery">
+             <summary>
+             Busy indication with battery charging type animation.
+             </summary>
+            </member>
+        <member name="F:Syncfusion.SfBusyIndicator.iOS.SFBusyIndicatorAnimationType.SFBusyIndicatorAnimationTypeDoubleCircle">
+             <summary>
+             Busy indication with rotation of double circle type animation.
+             </summary>
+            </member>
+        <member name="F:Syncfusion.SfBusyIndicator.iOS.SFBusyIndicatorAnimationType.SFBusyIndicatorAnimationTypeECG">
+             <summary>
+            Busy indication with live ECG type animation.
+             </summary>
+            </member>
+        <member name="F:Syncfusion.SfBusyIndicator.iOS.SFBusyIndicatorAnimationType.SFBusyIndicatorAnimationTypeGlobe">
+             <summary>
+             Busy indication with globe type animation.
+             </summary>
+            </member>
+        <member name="F:Syncfusion.SfBusyIndicator.iOS.SFBusyIndicatorAnimationType.SFBusyIndicatorAnimationTypeHorizontalPulsingBox">
+             <summary>
+             Busy indication with box with pulsing type animation.
+             </summary>
+            </member>
+        <member name="F:Syncfusion.SfBusyIndicator.iOS.SFBusyIndicatorAnimationType.SFBusyIndicatorAnimationTypeMovieTimer">
+             <summary>
+             Busy indication with movie timer type animation.
+             </summary>  
+            </member>
+        <member name="F:Syncfusion.SfBusyIndicator.iOS.SFBusyIndicatorAnimationType.SFBusyIndicatorAnimationTypePrint">
+             <summary>
+            Busy indication with printer type animation.
+             </summary>
+            </member>
+        <member name="F:Syncfusion.SfBusyIndicator.iOS.SFBusyIndicatorAnimationType.SFBusyIndicatorAnimationTypeRectangle">
+             <summary>
+             Busy indication with jumping rectangle type animation.
+             </summary>
+            </member>
+        <member name="F:Syncfusion.SfBusyIndicator.iOS.SFBusyIndicatorAnimationType.SFBusyIndicatorAnimationTypeRollingBall">
+             <summary>
+             Busy indication with ball that roll on a circle type animation.
+             </summary>
+            </member>
+        <member name="F:Syncfusion.SfBusyIndicator.iOS.SFBusyIndicatorAnimationType.SFBusyIndicatorAnimationTypeSingleCircle">
+             <summary>
+             Busy indication with circle type animation.
+             </summary>
+            </member>
+        <member name="F:Syncfusion.SfBusyIndicator.iOS.SFBusyIndicatorAnimationType.SFBusyIndicatorAnimationTypeSlicedCircle">
+             <summary>
+             Busy indication with sliced circle type animation.
+             </summary>
+            </member>
+        <member name="F:Syncfusion.SfBusyIndicator.iOS.SFBusyIndicatorAnimationType.SFBusyIndicatorAnimationTypeZoomingTarget">
+             <summary>
+             Busy indication with Zooming type animation.
+             </summary>
+            </member>
+        <member name="F:Syncfusion.SfBusyIndicator.iOS.SFBusyIndicatorAnimationType.SFBusyIndicatorAnimationTypeGear">
+             <summary>
+             Busy indication with gear type animation.
+             </summary>
+            </member>
+        <member name="F:Syncfusion.SfBusyIndicator.iOS.SFBusyIndicatorAnimationType.SFBusyIndicatorAnimationTypeBox">
+             <summary>
+             Busy indication with box arrangement type animation.
+             </summary>
+            </member>
+        <member name="T:Syncfusion.SfBusyIndicator.iOS.SFBusyIndicatorTitlePlacement">
+             <summary>
+             Contains the values for the TitlePlacement enumeration that contains various built in title positions.
+             </summary>
+            </member>
+        <member name="F:Syncfusion.SfBusyIndicator.iOS.SFBusyIndicatorTitlePlacement.SFBusyIndicatorTitlePlacementTop">
+             <summary>
+             Displays the Title at top of the animation position.
+             </summary>
+            </member>
+        <member name="F:Syncfusion.SfBusyIndicator.iOS.SFBusyIndicatorTitlePlacement.SFBusyIndicatorTitlePlacementBottom">
+             <summary>
+             Displays the Title at Bottom of the animation position.
+             </summary>
+            </member>
+        <member name="F:Syncfusion.SfBusyIndicator.iOS.SFBusyIndicatorTitlePlacement.SFBusyIndicatorTitlePlacementNone">
+             <summary>
+             Title will not be displayed.
+             </summary>
+            </member>
+    </members>
+</doc>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioCare.View.SubMenu.CompletedBookingPage"
+    Title="Completed Bookings" BackgroundColor="White">
+    <ContentPage.Content>
+
+        <StackLayout Spacing="10" Padding="10">
+
+            <ListView x:Name="completeBookingList" RowHeight="80"  SeparatorColor="Blue" 
+                       ><!--ItemTapped="completeBook_ItemTapped"-->
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell   ><!--Tapped="ViewCellComplete_Tapped"-->
+                            <StackLayout Padding="5,5,0,0" 
+                        Orientation="Vertical" Spacing="20">
+                                <StackLayout Orientation="Vertical">
+                                    <Label Text="{Binding BookingNo}"   TextColor="#0E197C" FontSize="Medium" FontAttributes="Bold"
+                                           VerticalOptions="StartAndExpand"/>
+                                    <Label Text="{Binding AppointmentDateTime}"
+                                     TextColor="#808080"
+                                            VerticalOptions="StartAndExpand"/>
+                                    <Label Text="{Binding TypeOfService}"
+                                VerticalOptions="StartAndExpand"
+                                TextColor="#808080"/>
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>

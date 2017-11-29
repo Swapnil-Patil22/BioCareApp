@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioCare.View.SubMenu.NotificationsPageSelected"
+             BackgroundColor="White"
+             Title="Notifications">
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="10">
+                <BoxView BackgroundColor="Transparent" HeightRequest="10"/>
+
+                <Grid>
+                    <StackLayout Grid.Row="0" Grid.Column="0">
+                        <Label Text="NUMBER" TextColor="#000080" FontSize="Small"/>
+                    </StackLayout>
+                    <StackLayout Grid.Row="0" Grid.Column="1">
+                        <Label x:Name="NNum" TextColor="#747577"  FontSize="Small" />
+                        <Entry x:Name="ENNum" TextColor="#747577"  FontSize="Small" IsVisible="False" />
+                    </StackLayout>
+                </Grid>
+
+                <BoxView BackgroundColor="Transparent" HeightRequest="20"/>
+                
+                <Grid>
+                    <StackLayout Grid.Row="0" Grid.Column="0">
+                        <Label Text="TITLE" TextColor="#000080" FontSize="Small" />
+                    </StackLayout>
+                    <StackLayout Grid.Row="0" Grid.Column="1">
+                        <Label x:Name="NTitle" TextColor="#747577" FontSize="Small" />
+                        <Entry x:Name="ENTitle" TextColor="#747577" FontSize="Small" IsVisible="False"/>
+                    </StackLayout>
+                </Grid>
+
+                <BoxView BackgroundColor="Transparent" HeightRequest="20"/>
+
+                <Grid>
+                    <StackLayout Grid.Row="0" Grid.Column="0">
+                        <Label Text="BOOKING NO" TextColor="#000080" FontSize="Small" />
+                    </StackLayout>
+                    <StackLayout Grid.Row="0" Grid.Column="1">
+                        <Label x:Name="NBNo" TextColor="#747577"  FontSize="Small" />
+                        <Entry x:Name="ENBNo" TextColor="#747577"  FontSize="Small" IsVisible="False" />
+                    </StackLayout>
+                </Grid>
+
+                <BoxView BackgroundColor="Transparent" HeightRequest="20"/>
+                
+                <Grid>
+                    <StackLayout Grid.Row="0" Grid.Column="0">
+                        <Label Text="DATE" TextColor="#000080" FontSize="Small" />
+                    </StackLayout>
+                    <StackLayout Grid.Row="0" Grid.Column="1">
+                        <Label x:Name="NDate" TextColor="#747577" FontSize="Small" />
+                        <Entry x:Name="ENDate" TextColor="#747577" FontSize="Small" IsVisible="False" />
+                    </StackLayout>
+                </Grid>
+
+                <BoxView BackgroundColor="Transparent" HeightRequest="20"/>
+
+                <Grid>
+                    <StackLayout Grid.Row="0" Grid.Column="0">
+                        <Label Text="TIME" TextColor="#000080" FontSize="Small"/>
+                    </StackLayout>
+                    <StackLayout Grid.Row="0" Grid.Column="1">
+                        <Label x:Name="NTime" TextColor="#747577"  FontSize="Small" />
+                        <Entry x:Name="NRTime" TextColor="#747577"  FontSize="Small" IsVisible="False"/>
+                    </StackLayout>
+                </Grid>
+
+                <BoxView BackgroundColor="Transparent" HeightRequest="20"/>
+                <Grid>
+                    <StackLayout Grid.Row="0" Grid.Column="0">
+                        <Label Text="DESCRIPTION" TextColor="#000080" FontSize="Small" />
+                    </StackLayout>
+                    <StackLayout Grid.Row="0" Grid.Column="1">
+                        <Label x:Name="NDescription" TextColor="#747577" FontSize="Small" />
+                        <Entry x:Name="ENDescription" TextColor="#747577" FontSize="Small" IsVisible="False" />
+                    </StackLayout>
+                </Grid>
+
+                <BoxView Color="Transparent" HeightRequest="5"/>
+                <Button x:Name="btnCompleteNConfirm" Text="Confirm" TextColor="White" BackgroundColor="#0E197C" FontSize="Small" HorizontalOptions="Center" IsVisible="False" />
+
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

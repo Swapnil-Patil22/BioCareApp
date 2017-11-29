@@ -1,0 +1,18 @@
+﻿<Properties StartupConfiguration="{93233AD1-5531-474F-AE96-A15DD5F48324}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BioCare/BioCare/View/SubMenu/CompletedBookingEquipmentPage.xaml">
+    <Files>
+      <File FileName="BioCare/BioCare/View/SubMenu/FeedbackPage.xaml" Line="28" Column="15" />
+      <File FileName="BioCare/BioCare/View/SubMenu/FeedbackPage.xaml.cs" Line="55" Column="2" />
+      <File FileName="BioCare/BioCare/View/SubMenu/CompletedBookingEquipmentPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="BioCare/BioCare/View/SubMenu/CompletedBookingEquipmentPage.xaml" Line="361" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.BioCare.Android PreferredExecutionTarget="Android.Android_Accelerated_Nougat" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.BioCare.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.30B9A052-D2E3-4DDC-9728-F471A0EEAAC8" />
+</Properties>

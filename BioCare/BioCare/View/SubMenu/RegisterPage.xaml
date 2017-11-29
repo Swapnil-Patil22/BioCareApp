@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioCare.View.SubMenu.RegisterPage"
+             BackgroundColor="White" >
+
+    <ContentPage.Content>
+
+        <StackLayout HorizontalOptions="StartAndExpand" Padding="10, 10, 10, 10" BackgroundColor="White">
+            <Image WidthRequest="200" HeightRequest="200" VerticalOptions="Center" HorizontalOptions="Center" >
+                <Image.Source>
+                    <OnPlatform x:TypeArguments="ImageSource"
+                              iOS="homepagepicture.jpg"
+                              Android="homepagepicture.jpg" />
+                </Image.Source>
+            </Image>
+
+
+            <StackLayout HorizontalOptions="Start"  Padding="20,10,10,10" >
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand">
+
+                    <Image Source="user.png" WidthRequest="20" HeightRequest="20" />
+                    <Entry  Placeholder="First Name                                       "/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand">
+
+                    <Image Source="user.png" WidthRequest="20" HeightRequest="20" HorizontalOptions="StartAndExpand" />
+                    <Entry  HorizontalOptions="StartAndExpand" Placeholder="Last Name                                       "/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand">
+
+                    <Image Source="mail.png" WidthRequest="20" HeightRequest="20" HorizontalOptions="StartAndExpand" />
+                    <Entry   HorizontalOptions="StartAndExpand" Placeholder="Enter your Email                             "/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand">
+
+                    <Image Source="password.png" WidthRequest="20" HeightRequest="20" HorizontalOptions="StartAndExpand" />
+                    <Entry  HorizontalOptions="StartAndExpand"  Placeholder="Enter your Password                     "/>
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Padding="5, 5, 5, 0">
+
+                <Button Text="Cancel" TextColor="White" BackgroundColor="#0E197C" FontSize="Small" HorizontalOptions="CenterAndExpand" Clicked="NavigateButton_OnClicked"/>
+                <Button Text="Register" TextColor="White"  BackgroundColor="#0E197C"  FontSize="Small" HorizontalOptions="CenterAndExpand" Clicked="RegisterComplete_OnClicked"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioCare.View.SubMenu.ContactPage"
+             xmlns:local="clr-namespace:BioCare;assembly=BioCare"                 
+             BackgroundColor="White"
+              Title="Contact Us ">
+
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="StartAndExpand" Padding="0, 0, 0, 0" x:Name="SignInPageLayout" BackgroundColor="White">
+
+            <Image WidthRequest="250" HeightRequest="150" VerticalOptions="Center" HorizontalOptions="Center" >
+                <Image.Source>
+                    <OnPlatform x:TypeArguments="ImageSource"
+                              iOS="homepagepicture.jpg"
+                              Android="homepagepicture.jpg" />
+                </Image.Source>
+            </Image>
+
+
+            <StackLayout VerticalOptions="StartAndExpand" Padding="20, 2, 0, 0" Spacing="0" >
+                <BoxView Color="Transparent" HeightRequest="2"/>
+
+                <local:CustomEntry  Text="Bio-Care™ GREASE CONTROL PTE LTD" TextColor="#0E197C" FontSize="Medium"  x:Name="entry_1" TextChanged="Entry_TextChanged1" />
+                <!--Focused="Handle_Focused"-->
+                <BoxView Color="Transparent" HeightRequest="2"/>
+                <local:CustomEntry  Text="Blk 3023 #05-21" TextColor="#0E197C" FontSize="Medium" x:Name="entry2" TextChanged="Entry_TextChanged2"/>
+                <local:CustomEntry  Text="Ubi Road 3 Ubiplex I" TextColor="#0E197C" FontSize="Medium" x:Name="entry3" TextChanged="Entry_TextChanged3"/>
+                <local:CustomEntry  Text="Singapore 408663" TextColor="#0E197C" FontSize="Medium" x:Name="entry4" TextChanged="Entry_TextChanged4" />
+                <BoxView Color="Transparent" HeightRequest="20"/>
+                <local:CustomEntry  Text="Tel : (65) 67480877 (24 Hours)" TextColor="#0E197C" FontSize="Medium" x:Name="entry5" TextChanged="Entry_TextChanged5"/>
+                <local:CustomEntry  Text="Fax : (65) 67494588" TextColor="#0E197C" FontSize="Medium" x:Name="entry_Fax" TextChanged="Entry_TextChanged"/>
+                <local:CustomEntry  Text="Email:  bcgc@biocare.com.sg" TextColor="#0E197C" FontSize="Medium" x:Name="entry6" TextChanged="Entry_TextChanged6"/>
+            </StackLayout>
+
+        </StackLayout >
+
+    </ContentPage.Content>
+
+</ContentPage>

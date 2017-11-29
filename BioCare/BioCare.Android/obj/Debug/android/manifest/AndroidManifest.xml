@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" android:versionCode="1" android:versionName="1.0.1" package="BioCare.Android">
+  <!--suppress UsesMinSdkAttributes-->
+  <uses-sdk android:minSdkVersion="15" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <application android:label="BioCare.Android" android:theme="@style/AppStyle.Light" android:name="android.app.Application" android:allowBackup="true" android:icon="@drawable/homepagepicture" android:debuggable="true">
+    <activity android:configChanges="orientation|screenSize" android:icon="@drawable/homepagepicture" android:label="BioCare" android:theme="@style/AppStyle.Light" android:name="md59b58f92337834c13149e2619a60d44ec.MainActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity android:configChanges="orientation|screenSize" android:name="md5cf4be63b82b35b5ba951617c70f88a94.FilePickerActivity" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="BioCare.Android.mono.MonoRuntimeProvider.__mono_init__" />
+    <!--suppress ExportedReceiver-->
+    <receiver android:name="mono.android.Seppuku">
+      <intent-filter>
+        <action android:name="mono.android.intent.action.SEPPUKU" />
+        <category android:name="mono.android.intent.category.SEPPUKU.BioCare.Android" />
+      </intent-filter>
+    </receiver>
+  </application>
+</manifest>

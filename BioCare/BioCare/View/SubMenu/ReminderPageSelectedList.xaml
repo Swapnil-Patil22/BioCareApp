@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioCare.View.SubMenu.ReminderPageSelectedList"
+             BackgroundColor="White"
+             Title="Reminders">
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="10">
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="End">
+                    <Image x:Name="editRImage" Source="edit.png " WidthRequest="20" HeightRequest="20" >
+                    </Image>
+                    <Image x:Name="completeCloseRImage" Source="close.png " WidthRequest="20" HeightRequest="20" IsVisible="False">
+                    </Image>
+                </StackLayout>
+
+                <BoxView BackgroundColor="Transparent" HeightRequest="10"/>
+
+                <Grid>
+                    <StackLayout Grid.Row="0" Grid.Column="0">
+                        <Label Text="NUMBER" TextColor="#000080" FontSize="Small"/>
+                    </StackLayout>
+                    <StackLayout Grid.Row="0" Grid.Column="1">
+                        <Label x:Name="RNum" TextColor="#747577"  FontSize="Small" />
+                        <Entry x:Name="ERNum" TextColor="#747577"  FontSize="Small" />
+                    </StackLayout>
+                </Grid>
+                
+                <BoxView BackgroundColor="Transparent" HeightRequest="20"/>
+
+                <Grid>
+                    <StackLayout Grid.Row="0" Grid.Column="0">
+                        <Label Text="TITLE" TextColor="#000080" FontSize="Small"/>
+                    </StackLayout>
+                    <StackLayout Grid.Row="0" Grid.Column="1">
+                        <Label x:Name="RTitle" TextColor="#747577"  FontSize="Small" />
+                        <Entry x:Name="ERTitle" TextColor="#747577"  FontSize="Small" />
+                    </StackLayout>
+                </Grid>
+
+                <BoxView BackgroundColor="Transparent" HeightRequest="20"/>
+
+
+                <Grid>
+                    <StackLayout Grid.Row="0" Grid.Column="0">
+                        <Label Text="BOOKING NO" TextColor="#000080" FontSize="Small" />
+                    </StackLayout>
+                    <StackLayout Grid.Row="0" Grid.Column="1">
+                        <Label x:Name="RBNo" TextColor="#747577"  FontSize="Small"  />
+                        <Entry x:Name="ERBNo" TextColor="#747577"  FontSize="Small"  />
+                    </StackLayout>
+                </Grid>
+
+                <BoxView BackgroundColor="Transparent" HeightRequest="20"/>
+
+                <Grid>
+                    <StackLayout Grid.Row="0" Grid.Column="0">
+                        <Label Text="DATE" TextColor="#000080" FontSize="Small"/>
+                    </StackLayout>
+                    <StackLayout Grid.Row="0" Grid.Column="1">
+                        <Label x:Name="RDate" TextColor="#747577"  FontSize="Small" />
+                        <Entry x:Name="ERDate" TextColor="#747577"  FontSize="Small" />
+                    </StackLayout>
+                </Grid>
+
+                <BoxView BackgroundColor="Transparent" HeightRequest="20"/>
+
+                <Grid>
+                    <StackLayout Grid.Row="0" Grid.Column="0">
+                        <Label Text="TIME" TextColor="#000080" FontSize="Small"/>
+                    </StackLayout>
+                    <StackLayout Grid.Row="0" Grid.Column="1">
+                        <Label x:Name="RTime" TextColor="#747577"  FontSize="Small" />
+                        <Entry x:Name="ERTime" TextColor="#747577"  FontSize="Small" />
+                    </StackLayout>
+                </Grid>
+
+                <BoxView BackgroundColor="Transparent" HeightRequest="20"/>
+
+                <Grid>
+                    <StackLayout Grid.Row="0" Grid.Column="0">
+                        <Label Text="DESCRIPTION" TextColor="#000080" FontSize="Small"/>
+                    </StackLayout>
+                    <StackLayout Grid.Row="0" Grid.Column="1">
+                        <Label x:Name="RDescription" TextColor="#747577"  FontSize="Small" />
+                        <Entry x:Name="ERDescription" TextColor="#747577"  FontSize="Small" />
+                    </StackLayout>
+                </Grid>
+
+                <BoxView Color="Transparent" HeightRequest="5"/>
+                <Button x:Name="btnCompleteRConfirm" Text="Confirm" TextColor="White" BackgroundColor="#0E197C" FontSize="Small" HorizontalOptions="Center" IsVisible="False" Clicked="btnCompleteRConfirm_ClickedAsync"/>
+
+            </StackLayout>
+
+
+
+        </ScrollView>
+    </ContentPage.Content>
+    
+</ContentPage>

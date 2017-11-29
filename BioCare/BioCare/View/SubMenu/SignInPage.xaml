@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioCare.View.SignInPage" BackgroundColor="White">
+
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="StartAndExpand" BackgroundColor="White" Padding="0">
+
+            <BoxView Color="Transparent" HeightRequest="50"/>
+            
+            <Image WidthRequest="150" HeightRequest="150" VerticalOptions="Center" HorizontalOptions="Center" >
+                <Image.Source>
+                    <OnPlatform x:TypeArguments="ImageSource"
+                              iOS="homepagepicture.jpg"
+                              Android="homepagepicture.jpg" />
+                </Image.Source>
+            </Image>
+
+            <StackLayout HorizontalOptions="StartAndExpand" Padding="0">
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Padding="0">
+                    <BoxView Color="Transparent" HeightRequest="2"/>
+                    <Image Source="mail.png" WidthRequest="20" HeightRequest="20" HorizontalOptions="StartAndExpand" />
+                    <Entry HorizontalOptions="StartAndExpand" Placeholder="Email                                      "/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Padding="0">
+                    <BoxView Color="Transparent" HeightRequest="2"/>
+                    <Image Source="password.png" WidthRequest="20" HeightRequest="20" HorizontalOptions="StartAndExpand" />
+                    <Entry HorizontalOptions="StartAndExpand" Placeholder="Password                              "/>
+                </StackLayout>
+
+                <BoxView Color="Transparent" HeightRequest="15"/>
+                <Button Text="Submit"  TextColor="White" BackgroundColor="#0E197C" HorizontalOptions="Center" Margin="40,0,0,0" Clicked="DashboadPage_OnClicked" />
+                <BoxView Color="Transparent" HeightRequest="10"/>
+
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" >
+
+                    <Label Text="Remember Me" Margin="0,5,0,0" FontSize="Small"/>
+                    <Switch HorizontalOptions="LayoutOptions.Center"  />
+
+            </StackLayout >
+            
+            <StackLayout>
+                <Label Text="Forgot Password ?" HorizontalOptions="Center"  >
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Forgot_Password"/>
+                </Label.GestureRecognizers>
+            </Label>
+                
+
+        </StackLayout>
+
+        </StackLayout >
+
+
+    </ContentPage.Content>
+
+</ContentPage>

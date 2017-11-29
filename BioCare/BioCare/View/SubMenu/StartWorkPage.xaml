@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioCare.View.SubMenu.StartWorkPage"
+             xmlns:gauge="clr-namespace:Syncfusion.SfGauge.XForms;assembly=Syncfusion.SfGauge.XForms"
+             BackgroundColor="White"
+             Title="Start Work"
+             >
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid x:Name="MainGrid" HorizontalOptions="StartAndExpand">
+                <Grid.RowDefinitions >
+                    <RowDefinition Height="0.52*" />
+                    <RowDefinition Height="0.3*" />
+                    <RowDefinition Height="0.52*" />
+                    <RowDefinition Height="0.52*" />
+                    <RowDefinition Height="0.52*" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <StackLayout BackgroundColor="White"  Orientation="Horizontal" HorizontalOptions="StartAndExpand" Grid.Row="0" Padding="0, 20, 0, 0">
+
+                    <BoxView Color="Transparent" HeightRequest="30"/>
+
+                    <gauge:SfDigitalGauge x:Name="segmentSevenGauge"    CharacterHeight="45" DisabledSegmentAlpha="30" SegmentStrokeWidth="3.5" CharacterWidth="27"  CharacterType="SegmentSeven"  />
+
+                </StackLayout>
+                <Grid Grid.Row="1" BackgroundColor="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Image x:Name="PlayImg" Source="play1.png " WidthRequest="30" HeightRequest="30" IsVisible="true" Grid.Column="1">
+                    </Image>
+                    <Image x:Name="PauseImg" Source="pause1.png " WidthRequest="30" HeightRequest="30" IsVisible="False" Grid.Column="1" >
+                    </Image>
+                    <Image x:Name="ResetImg" Source="reset.png " WidthRequest="25" HeightRequest="25" IsVisible="false" Grid.Column="0" >
+                    </Image>
+                    <Image x:Name="StopImg" Source="stop1.png " WidthRequest="30" HeightRequest="30" IsVisible="false" Grid.Column="2" >
+                    </Image>
+
+                </Grid>
+
+
+                <Frame Grid.Row="2" Padding="1,1,1,1" BackgroundColor="#0E197C" Margin="16">
+
+                    <StackLayout   BackgroundColor="White" Padding="10, 0, 0, 2" >
+                        <Label  Text="Start Time"  FontSize="20" HorizontalOptions="Start" TextColor="#0E197C"  />
+                        <Label x:Name="Startime" IsEnabled="False" TextColor="#747577" FontSize="Medium"/>
+                    </StackLayout>
+                </Frame>
+
+
+                <Frame Grid.Row="3" Padding="1,1,1,1" BackgroundColor="#0E197C" Margin="16">
+
+                    <StackLayout   BackgroundColor="White" Padding="10, 0, 0, 2" >
+                        <Label  Text="End Time"  FontSize="20"  HorizontalOptions="Start" TextColor="#0E197C" />
+                        <Label x:Name="EndTime" IsEnabled="False" TextColor="#747577" FontSize="Medium" />
+                    </StackLayout>
+                </Frame>
+
+                <Frame Grid.Row="4" Padding="1,1,1,1" BackgroundColor="#0E197C" Margin="16">
+
+                    <StackLayout   BackgroundColor="White" Padding="10, 0, 0, 2" >
+                        <Label  Text="Total Duration"  FontSize="20"  HorizontalOptions="Start" TextColor="#0E197C" />
+                        <Label x:Name="TotalTime" IsEnabled="False" TextColor="#747577" FontSize="Medium" />
+                    </StackLayout>
+                </Frame>
+
+
+                <StackLayout Orientation="Horizontal" Grid.Row="5" HorizontalOptions="Center">
+                    <Button x:Name="btnDone" Text="Done"  HorizontalOptions="Center" TextColor="White" BackgroundColor="#0E197C" Clicked="FeedbackBtn_Clicked" IsVisible="False"/>
+                </StackLayout>
+
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+
+</ContentPage>

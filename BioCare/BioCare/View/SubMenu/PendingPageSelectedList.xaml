@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioCare.View.SubMenu.PendingPageSelectedList"
+             Title="Scheduled Bookings"
+             BackgroundColor="White">
+   
+    <ContentPage.Content>
+        
+        <ScrollView>
+            <StackLayout Padding="10">
+
+                <BoxView Color="Transparent" HeightRequest="5"/>
+                <StackLayout Padding="10,0,10,0">
+                    <Grid>
+                            <Label Grid.Row="0" Grid.Column="0" Text="BOOKING NO" TextColor="#000080" FontSize="Small" FontAttributes="Bold" />
+                   
+                        <StackLayout Grid.Row="0" Grid.Column="1">
+                            <Label Grid.Row="0" Grid.Column="1" x:Name="BNo"  FontSize="Small" TextColor="#747577" FontAttributes="Bold"  IsEnabled="False" />
+                        </StackLayout>
+                    </Grid>
+                    <BoxView Color="Transparent" HeightRequest="5"/>
+                    <Grid>
+                        <StackLayout Grid.Row="0" Grid.Column="0">
+                            <Label Text="APPOINTMENT DATE/TIME" TextColor="#000080" FontSize="Small"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="0" Grid.Column="1">
+                            <Label x:Name="ADT" TextColor="#747577"  FontSize="Small" IsEnabled="False" />
+                        </StackLayout>
+                    </Grid>
+                    <BoxView Color="Transparent" HeightRequest="5"/>
+
+                    <Grid>
+                        <StackLayout Grid.Row="0" Grid.Column="0">
+                            <Label Text="LOCATION" TextColor="#000080" FontSize="Small"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="0" Grid.Column="1">
+                            <Label x:Name="LOC" TextColor="#747577"  FontSize="Small" IsEnabled="False" />
+                        </StackLayout>
+                    </Grid>
+                    <BoxView Color="Transparent" HeightRequest="5"/>
+                    <Grid>
+                        <StackLayout Grid.Row="0" Grid.Column="0">
+                            <Label Text="CUSTOMER NAME" TextColor="#000080" FontSize="Small"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="0" Grid.Column="1">
+                            <Label x:Name="CNAME" TextColor="#747577"  FontSize="Small" IsEnabled="False" />
+                        </StackLayout>
+                    </Grid>
+                    <BoxView Color="Transparent" HeightRequest="5"/>
+                    <Grid>
+                        <StackLayout Grid.Row="0" Grid.Column="0">
+                            <Label Text="MOBILE NO" TextColor="#000080" FontSize="Small"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="0" Grid.Column="1">
+                            <Label x:Name="MOBNO" TextColor="#747577"  FontSize="Small" IsEnabled="False" />
+                        </StackLayout>
+                    </Grid>
+
+                    <BoxView  Color="Gray"  HeightRequest="1" HorizontalOptions="FillAndExpand"/>
+
+                </StackLayout>
+                <BoxView Color="Transparent" HeightRequest="5"/>
+                <StackLayout Padding="10,0,10,0">
+                    <Grid>
+                        <StackLayout Grid.Row="0" Grid.Column="0">
+                            <Label Text="VEHICLE NO" TextColor="#000080" FontSize="Small"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="0" Grid.Column="1">
+                            <Label x:Name="VEH" TextColor="#747577"  FontSize="Small" IsEnabled="False"/>
+                        </StackLayout>
+                    </Grid>
+                    <BoxView Color="Transparent" HeightRequest="5"/>
+                    <Grid>
+                        <StackLayout Grid.Row="0" Grid.Column="0">
+                            <Label Text="TYPE OF SERVICE" TextColor="#000080" FontSize="Small"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="0" Grid.Column="1">
+                            <Label x:Name="TOS" TextColor="#747577"  FontSize="Small" IsEnabled="False"/>
+                        </StackLayout>
+                    </Grid>
+                    <BoxView Color="Transparent" HeightRequest="5"/>
+                    <Grid>
+                        <StackLayout Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2">
+                            <Label Text="LIST OF EQUIPMENT"  TextColor="#000080" FontSize="Small" />
+                        </StackLayout>
+                        <StackLayout Grid.Row="0" Grid.Column="1">
+                            <!--<Label x:Name="EQUIP" Text="Hii" HorizontalOptions="Start" TextColor="#747577"  FontSize="Small" IsEnabled="False"/>-->
+                            <Image x:Name="HamBurgerImg" Source="hamimageColored.png" HorizontalOptions="Start"  WidthRequest="20" HeightRequest="20"/>
+                        </StackLayout>
+                        <!--<StackLayout Grid.Row="0" Grid.Column="2">
+                            <Image x:Name="HamBurgerImg" Source="hamimageColored.png" HorizontalOptions="Start" WidthRequest="20" HeightRequest="20"/>
+                        </StackLayout>-->
+                    </Grid>
+
+                    <BoxView  Color="Gray"  HeightRequest="1" HorizontalOptions="FillAndExpand"/>
+
+                </StackLayout>
+
+                <BoxView Color="Transparent" HeightRequest="5"/>
+                <StackLayout Padding="10,0,10,0">
+                    <Grid>
+                        <StackLayout Grid.Row="0" Grid.Column="0">
+                            <Label Text="TEAM NAME" TextColor="#000080" FontSize="Small"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="0" Grid.Column="1">
+                            <Label x:Name="TNAME" TextColor="#747577"  FontSize="Small" IsEnabled="False"/>
+                        </StackLayout>
+                    </Grid>
+                    <BoxView Color="Transparent" HeightRequest="5"/>
+                    <Grid>
+                        <StackLayout Grid.Row="0" Grid.Column="0">
+                            <Label Text="TEAM LEADER" TextColor="#000080" FontSize="Small"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="0" Grid.Column="1">
+                            <Label x:Name="TLEADER" TextColor="#747577"  FontSize="Small" IsEnabled="False"/>
+                        </StackLayout>
+                    </Grid>
+                    <BoxView Color="Transparent" HeightRequest="5"/>
+                    <Grid>
+                        <StackLayout Grid.Row="0" Grid.Column="0">
+                            <Label Text="WORKERS" TextColor="#000080" FontSize="Small"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="0" Grid.Column="1">
+                            <Label x:Name="WORK" TextColor="#747577" FontSize="Small" IsEnabled="False"/>
+                        </StackLayout>
+                    </Grid>
+
+                    <BoxView  Color="Gray"  HeightRequest="1" HorizontalOptions="FillAndExpand"/>
+
+                </StackLayout>
+                <BoxView Color="Transparent" HeightRequest="5"/>
+                <StackLayout Padding="10,0,10,0">
+                    <Grid>
+                        <StackLayout Grid.Row="0" Grid.Column="0">
+                            <Label Text="STATUS" TextColor="#000080" FontSize="Small"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="0" Grid.Column="1">
+                            <Label x:Name="STAT" TextColor="#747577"  FontSize="Small" IsEnabled="False"/>
+                        </StackLayout>
+                    </Grid>
+
+                    <!--<Grid>
+                        <StackLayout Grid.Row="0" Grid.Column="0">
+                            <Label Text="REMARKS" TextColor="#000080" FontSize="Small"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="0" Grid.Column="1">
+                            <Label x:Name="REMARK" TextColor="#747577"  FontSize="Small" IsEnabled="False"/>
+                        </StackLayout>
+                    </Grid>-->
+
+                    <BoxView  Color="Gray"  HeightRequest="1" HorizontalOptions="FillAndExpand"/>
+
+                </StackLayout>
+
+
+                <BoxView Color="Transparent" HeightRequest="5"/>
+                
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Padding="5, 5, 5, 0">
+
+                    
+                    <Button x:Name="btnPendingStart" Text="Start Work" TextColor="White"  BackgroundColor="#0E197C"  FontSize="Small" HorizontalOptions="CenterAndExpand" Clicked="StartWork_OnClicked" />
+                </StackLayout>
+
+            </StackLayout>
+        </ScrollView>
+        
+    </ContentPage.Content>
+</ContentPage>

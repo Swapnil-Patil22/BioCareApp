@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioCare.View.SubMenu.NotificationPage"
+            Title="Notifications" 
+             BackgroundColor="White">
+    <ContentPage.Content>
+        <StackLayout Spacing="10" Padding="10">
+       
+
+                <ListView x:Name="NotificationsList" RowHeight="80" HasUnevenRows="True"
+                    ItemTapped="NotificationsList_ItemTapped" >
+                
+                    <ListView.ItemTemplate>
+                   
+                        <DataTemplate>
+
+                        <ViewCell Tapped="ViewCellNotifications_Tapped">
+                            <Frame Padding="10">
+                                <Frame.Content>
+                                    
+                                    <Frame Padding="5,5,5,5" WidthRequest="60" HasShadow="True" OutlineColor="Black" BackgroundColor="White">
+                                        <Frame.Content>
+                                            <StackLayout 
+                        Orientation="Vertical" Spacing="2">
+                                                
+                                    <Label Text="{Binding Title}"   TextColor="#0E197C" FontSize="Medium" FontAttributes="Bold"
+                                           VerticalOptions="StartAndExpand"/>
+                                                <Label Text="{Binding Date}"
+                                     TextColor="#808080"
+                                            VerticalOptions="StartAndExpand"/>
+                                                <Label Text="{Binding Description}"
+                                     TextColor="#808080"
+                                            VerticalOptions="StartAndExpand"/>
+                                </StackLayout>
+                                        </Frame.Content>
+
+                                    </Frame>
+                                </Frame.Content>
+
+                            </Frame>
+
+                        </ViewCell>
+                   
+                    </DataTemplate>
+                   
+                </ListView.ItemTemplate>
+               
+            </ListView>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

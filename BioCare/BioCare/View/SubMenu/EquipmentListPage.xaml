@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BioCare.View.SubMenu.EquipmentListPage"
+             Title="Check for Equipment"
+             BackgroundColor="White">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="0">
+
+                
+                <StackLayout >
+                    <BoxView Color="Transparent" HeightRequest="5"/>
+                    <Grid>
+                        <StackLayout Grid.Row="0" Grid.Column="0">
+                            <Image Source="toolbox.png" WidthRequest="20" HeightRequest="20"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="0" Grid.Column="1">
+                            <Label Text="TOOL BOX" TextColor="#000080" FontSize="Small"  />
+                        </StackLayout>
+
+                        <StackLayout Grid.Row="0" Grid.Column="2">
+                            <Switch HorizontalOptions="LayoutOptions.Center" />
+                        </StackLayout>
+
+                    </Grid>
+                </StackLayout>
+
+                <StackLayout>
+
+                    <Grid>
+                        <StackLayout Grid.Row="0" Grid.Column="0">
+                            <Image Source="torchlight.png" WidthRequest="20" HeightRequest="20"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="0" Grid.Column="1">
+                            <Label Text="TORCH LIGHT" TextColor="#000080" FontSize="Small"  />
+                        </StackLayout>
+
+                        <StackLayout Grid.Row="0" Grid.Column="2">
+                            <Switch HorizontalOptions="LayoutOptions.Center" />
+                        </StackLayout>
+
+                    </Grid>
+                </StackLayout>
+
+                <BoxView Color="Transparent" HeightRequest="5"/>
+                <StackLayout>
+
+                    <Grid>
+                        <StackLayout Grid.Row="0" Grid.Column="0">
+                            <Image Source="aabatteries.png" WidthRequest="20" HeightRequest="20"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="0" Grid.Column="1">
+                            <Label Text="AA BATTERIES" TextColor="#000080" FontSize="Small"  />
+                        </StackLayout>
+
+                        <StackLayout Grid.Row="0" Grid.Column="2">
+                            <Switch HorizontalOptions="LayoutOptions.Center" />
+                        </StackLayout>
+
+                    </Grid>
+                </StackLayout>
+
+                <BoxView Color="Transparent" HeightRequest="5"/>
+
+                <StackLayout>
+                    <Grid>
+                        <StackLayout Grid.Row="0" Grid.Column="0">
+                            <Image Source="screwdriverphilips.png" WidthRequest="20" HeightRequest="20"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="0" Grid.Column="1">
+                            <Label Text="SCREWDRIVER PHILIPS" TextColor="#000080" FontSize="Small"  />
+                        </StackLayout>
+
+                        <StackLayout Grid.Row="0" Grid.Column="2">
+                            <Switch HorizontalOptions="LayoutOptions.Center" />
+                        </StackLayout>
+                    </Grid>
+                </StackLayout>
+
+                <BoxView Color="Transparent" HeightRequest="5"/>
+
+                <StackLayout>
+                    <Grid>
+                        <StackLayout Grid.Row="0" Grid.Column="0">
+                            <Image Source="screwdriverflathead.png" WidthRequest="20" HeightRequest="20"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="0" Grid.Column="1">
+                            <Label Text="SCREWDRIVER FLATHEAD" TextColor="#000080" FontSize="Small"  />
+                        </StackLayout>
+
+                        <StackLayout Grid.Row="0" Grid.Column="2">
+                            <Switch HorizontalOptions="LayoutOptions.Center" />
+                        </StackLayout>
+                    </Grid>
+                </StackLayout>
+
+                <BoxView Color="Transparent" HeightRequest="5"/>
+                <StackLayout>
+                    <Grid>
+                        <StackLayout Grid.Row="0" Grid.Column="0">
+                            <Image Source="ratchet.png" WidthRequest="20" HeightRequest="20"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="0" Grid.Column="1">
+                            <Label Text="RATCHET" TextColor="#000080" FontSize="Small"  />
+                        </StackLayout>
+
+                        <StackLayout Grid.Row="0" Grid.Column="2">
+                            <Switch HorizontalOptions="LayoutOptions.Center" />
+                        </StackLayout>
+                    </Grid>
+                </StackLayout>
+
+                <BoxView Color="Transparent" HeightRequest="5"/>
+
+                <StackLayout>
+                    <Grid>
+                        <StackLayout Grid.Row="0" Grid.Column="0">
+                            <Image Source="penknife.png" WidthRequest="20" HeightRequest="20"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="0" Grid.Column="1">
+                            <Label Text="PEN KNIFE" TextColor="#000080" FontSize="Small"  />
+                        </StackLayout>
+
+                        <StackLayout Grid.Row="0" Grid.Column="2">
+                            <Switch HorizontalOptions="LayoutOptions.Center" />
+                        </StackLayout>
+                    </Grid>
+                </StackLayout>
+
+                <BoxView Color="Transparent" HeightRequest="5"/>
+
+                <StackLayout>
+                    <Grid>
+                        <StackLayout Grid.Row="0" Grid.Column="0">
+                            <Image Source="adjustablewrench.png" WidthRequest="20" HeightRequest="20"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="0" Grid.Column="1">
+                            <Label Text="ADJUSTABLE WRENCH" TextColor="#000080" FontSize="Small"  />
+                        </StackLayout>
+
+                        <StackLayout Grid.Row="0" Grid.Column="2">
+                            <Switch HorizontalOptions="LayoutOptions.Center" />
+                        </StackLayout>
+                    </Grid>
+                </StackLayout>
+
+                <BoxView Color="Transparent" HeightRequest="5"/>
+
+                <StackLayout>
+                    <Grid>
+                        <StackLayout Grid.Row="0" Grid.Column="0">
+                            <Image Source="Monkeywrench.png" WidthRequest="20" HeightRequest="20"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="0" Grid.Column="1">
+                            <Label Text="MONKEY WRENCH" TextColor="#000080" FontSize="Small"  />
+                        </StackLayout>
+
+                        <StackLayout Grid.Row="0" Grid.Column="2">
+                            <Switch HorizontalOptions="LayoutOptions.Center" />
+                        </StackLayout>
+                    </Grid>
+                </StackLayout>
+
+                <StackLayout>
+                    <Grid>
+                        <StackLayout Grid.Row="0" Grid.Column="0">
+                            <Image Source="WaterTapkey.png" WidthRequest="20" HeightRequest="20"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="0" Grid.Column="1">
+                            <Label Text="WATER TAB KEY" TextColor="#000080" FontSize="Small"  />
+                        </StackLayout>
+
+                        <StackLayout Grid.Row="0" Grid.Column="2">
+                            <Switch HorizontalOptions="LayoutOptions.Center" />
+                        </StackLayout>
+                    </Grid>
+                </StackLayout>
+
+                <BoxView Color="Transparent" HeightRequest="5"/>
+
+                <StackLayout>
+                    <Grid>
+                        <StackLayout Grid.Row="0" Grid.Column="0">
+                            <Image Source="ManholeKeys.png" WidthRequest="20" HeightRequest="20"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="0" Grid.Column="1">
+                            <Label Text="MANHOLE KEYS 2X" TextColor="#000080" FontSize="Small"  />
+                        </StackLayout>
+
+                        <StackLayout Grid.Row="0" Grid.Column="2">
+                            <Switch HorizontalOptions="LayoutOptions.Center" />
+                        </StackLayout>
+                    </Grid>
+                </StackLayout>
+
+                <BoxView Color="Transparent" HeightRequest="5"/>
+                <StackLayout>
+                    <Grid>
+                        <StackLayout Grid.Row="0" Grid.Column="0">
+                            <Image Source="ManholeHook.png" WidthRequest="20" HeightRequest="20"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="0" Grid.Column="1">
+                            <Label Text="MANHOLE HOOK 2X" TextColor="#000080" FontSize="Small"  />
+                        </StackLayout>
+                        <StackLayout Grid.Row="0" Grid.Column="2">
+                            <Switch HorizontalOptions="LayoutOptions.Center" />
+                        </StackLayout>
+                    </Grid>
+                </StackLayout>
+
+                <BoxView Color="Transparent" HeightRequest="5"/>
+                <StackLayout>
+                    <Grid>
+                        <StackLayout Grid.Row="0" Grid.Column="0">
+                            <Image Source="Crowbar.png" WidthRequest="20" HeightRequest="20"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="0" Grid.Column="1">
+                            <Label Text="CROW BAR" TextColor="#000080" FontSize="Small"  />
+                        </StackLayout>
+                        <StackLayout Grid.Row="0" Grid.Column="2">
+                            <Switch HorizontalOptions="LayoutOptions.Center" />
+                        </StackLayout>
+                    </Grid>
+                </StackLayout>
+
+                <BoxView Color="Transparent" HeightRequest="5"/>
+                <StackLayout>
+                    <Grid>
+                        <StackLayout Grid.Row="0" Grid.Column="0">
+                            <Image Source="Strainer.png" WidthRequest="20" HeightRequest="20"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="0" Grid.Column="1">
+                            <Label Text="STRAINER" TextColor="#000080" FontSize="Small"  />
+                        </StackLayout>
+                        <StackLayout Grid.Row="0" Grid.Column="2">
+                            <Switch HorizontalOptions="LayoutOptions.Center" />
+                        </StackLayout>
+                    </Grid>
+                </StackLayout>
+
+
+                <BoxView Color="Transparent" HeightRequest="5"/>
+                <StackLayout>
+                    <Grid>
+                        <StackLayout Grid.Row="0" Grid.Column="0">
+                            <Image Source="smallhammer.png" WidthRequest="20" HeightRequest="20"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="0" Grid.Column="1">
+                            <Label Text="SMALL HAMMER" TextColor="#000080" FontSize="Small"  />
+                        </StackLayout>
+                        <StackLayout Grid.Row="0" Grid.Column="2">
+                            <Switch HorizontalOptions="LayoutOptions.Center" />
+                        </StackLayout>
+                    </Grid>
+                </StackLayout>
+
+                <BoxView Color="Transparent" HeightRequest="5"/>
+                <StackLayout>
+                    <Grid>
+                        <StackLayout Grid.Row="0" Grid.Column="0">
+                            <Image Source="sledgehammer.png" WidthRequest="20" HeightRequest="20"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="0" Grid.Column="1">
+                            <Label Text="SLEDGE HAMMER" TextColor="#000080" FontSize="Small"  />
+                        </StackLayout>
+                        <StackLayout Grid.Row="0" Grid.Column="2">
+                            <Switch HorizontalOptions="LayoutOptions.Center" />
+                        </StackLayout>
+                    </Grid>
+                </StackLayout>
+
+                <BoxView Color="Transparent" HeightRequest="5"/>
+                <StackLayout>
+                    <Grid>
+                        <StackLayout Grid.Row="0" Grid.Column="0">
+                            <Image Source="scrapper.png" WidthRequest="20" HeightRequest="20"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="0" Grid.Column="1">
+                            <Label Text="SCRAPER" TextColor="#000080" FontSize="Small"  />
+                        </StackLayout>
+                        <StackLayout Grid.Row="0" Grid.Column="2">
+                            <Switch HorizontalOptions="LayoutOptions.Center" />
+                        </StackLayout>
+                    </Grid>
+                </StackLayout>
+
+                <BoxView Color="Transparent" HeightRequest="5"/>
+                <StackLayout>
+                    <Grid>
+                        <StackLayout Grid.Row="0" Grid.Column="0">
+                            <Image Source="WD40.png" WidthRequest="20" HeightRequest="20"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="0" Grid.Column="1">
+                            <Label Text="WD 40" TextColor="#000080" FontSize="Small"  />
+                        </StackLayout>
+                        <StackLayout Grid.Row="0" Grid.Column="2">
+                            <Switch HorizontalOptions="LayoutOptions.Center" />
+                        </StackLayout>
+                    </Grid>
+                </StackLayout>
+
+
+                <BoxView Color="Transparent" HeightRequest="5"/>
+                <StackLayout>
+                    <Grid>
+                        <StackLayout Grid.Row="0" Grid.Column="0">
+                            <Image Source="Trashbag.png" WidthRequest="20" HeightRequest="20"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="0" Grid.Column="1">
+                            <Label Text="TRASH BAG" TextColor="#000080" FontSize="Small"  />
+                        </StackLayout>
+                        <StackLayout Grid.Row="0" Grid.Column="2">
+                            <Switch HorizontalOptions="LayoutOptions.Center" />
+                        </StackLayout>
+                    </Grid>
+                </StackLayout>
+
+                <BoxView Color="Transparent" HeightRequest="5"/>
+                <StackLayout>
+                    <Grid>
+                        <StackLayout Grid.Row="0" Grid.Column="0">
+                            <Image Source="gloves.png" WidthRequest="20" HeightRequest="20"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="0" Grid.Column="1">
+                            <Label Text="GLOVES" TextColor="#000080" FontSize="Small"  />
+                        </StackLayout>
+                        <StackLayout Grid.Row="0" Grid.Column="2">
+                            <Switch HorizontalOptions="LayoutOptions.Center" />
+                        </StackLayout>
+                    </Grid>
+                </StackLayout>
+
+                <BoxView Color="Transparent" HeightRequest="5"/>
+                <StackLayout>
+                    <Grid>
+                        <StackLayout Grid.Row="0" Grid.Column="0">
+                            <Image Source="safetycone.png" WidthRequest="20" HeightRequest="20"/>
+                        </StackLayout>
+                        <StackLayout Grid.Row="0" Grid.Column="1">
+                            <Label Text="SAFETY CONE" TextColor="#000080" FontSize="Small"  />
+                        </StackLayout>
+                        <StackLayout Grid.Row="0" Grid.Column="2">
+                            <Switch HorizontalOptions="LayoutOptions.Center" />
+                        </StackLayout>
+                    </Grid>
+                </StackLayout>
+
+                <BoxView Color="Transparent" HeightRequest="5"/>
+              
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Padding="5, 5, 5, 0">
+                    <Button x:Name="btnCancel" Text="Cancel" TextColor="White"  BackgroundColor="#0E197C"  FontSize="Small" HorizontalOptions="CenterAndExpand" Clicked="btnCancel_OnClicked" />
+                    <Button x:Name="btnSubmit" Text="Submit" TextColor="White"  BackgroundColor="#0E197C"  FontSize="Small" HorizontalOptions="CenterAndExpand" Clicked="btnSubmit_OnClicked" />
+                </StackLayout>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
