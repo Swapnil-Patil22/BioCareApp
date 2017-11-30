@@ -10,7 +10,7 @@ using Rg.Plugins.Popup.Services;
 
 namespace BioCare.View.Wizard
 {
-    class ForgotPasswordWizard : PopupPage
+    class ForgotPasswordWizard : ContentPage
     {
         public ForgotPasswordWizard()
         {

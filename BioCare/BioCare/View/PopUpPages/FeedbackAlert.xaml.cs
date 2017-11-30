@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using BioCare.View.SubMenu;
 using Rg.Plugins.Popup.Extensions;
 using Rg.Plugins.Popup.Pages;
+using Rg.Plugins.Popup.Services;
 using Xamarin.Forms;
 
 namespace BioCare.View.PopUpPages
@@ -15,15 +16,21 @@ namespace BioCare.View.PopUpPages
             InitializeComponent();
         }
 
-        private void Ok_ButtonClicked(object sender, EventArgs e)
+        async private void Ok_ButtonClicked(object sender, EventArgs e)
         {
-            CloseAllPopup();
+            var currentpage = this;
+            await Navigation.RemovePopupPageAsync(currentpage);
+            closebtn.IsEnabled = false;
+            okbtn.IsEnabled = false;
             App.Current.MainPage = new MasterPage(new BookingTappedPage("new"));
         }
 
-        void CloseButton_Tapped(object sender, System.EventArgs e)
+        async void CloseButton_Tapped(object sender, System.EventArgs e)
         {
-            CloseAllPopup();
+            var currentpage = this;
+            await Navigation.RemovePopupPageAsync(currentpage);
+            closebtn.IsEnabled = false;
+            okbtn.IsEnabled = false;
         }
 
         private async void CloseAllPopup()

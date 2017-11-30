@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?> 
+<?xml version="1.0" encoding="utf-8" ?> 
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BioCare.View.SubMenu.ProfilePage" 
@@ -51,10 +51,10 @@
                
                 <StackLayout VerticalOptions="StartAndExpand"  Spacing="0" >
 
-                    <local:CustomEntry1 x:Name="EName" HorizontalTextAlignment="Center" Placeholder="NAME" PlaceholderColor="#0E197C" FontSize="Large" IsEnabled="False"/>
+                    <local:CustomEntry1 x:Name="EName" HorizontalTextAlignment="Center" Placeholder="Name" PlaceholderColor="#0E197C" FontSize="Large" IsEnabled="False"/>
 
                     <BoxView  Color="Transparent" HeightRequest="2"/>
-                    <local:CustomEntry1 x:Name="EEmail" HorizontalTextAlignment="Center" Placeholder="EMAIL" FontSize="Small" IsEnabled="False"/>
+                    <local:CustomEntry1 x:Name="EEmail" HorizontalTextAlignment="Center" Placeholder="Email" FontSize="Small" IsEnabled="False"/>
 
                     <BoxView Color="Transparent" HeightRequest="2"/>
                     <local:CustomEntry1 x:Name="EUser" HorizontalTextAlignment="Center" Placeholder="Phone Number"  FontSize="Small" IsEnabled="False"/>

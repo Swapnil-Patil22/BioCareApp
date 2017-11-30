@@ -10,6 +10,10 @@ BioCare.Droid.MainActivity, BioCare.Android;md59b58f92337834c13149e2619a60d44ec.
 BioCare.Droid.MainActivity, BioCare.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md59b58f92337834c13149e2619a60d44ec.MainActivity
 BioCare.Droid.MainActivity;md59b58f92337834c13149e2619a60d44ec.MainActivity
 biocare.droid.MainActivity;md59b58f92337834c13149e2619a60d44ec.MainActivity
+BioCare.Droid.Renderrer.EditorsRenderer, BioCare.Android;md53792b102b5d0139ee9cd15852e457be2.EditorsRenderer
+BioCare.Droid.Renderrer.EditorsRenderer, BioCare.Android, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md53792b102b5d0139ee9cd15852e457be2.EditorsRenderer
+BioCare.Droid.Renderrer.EditorsRenderer;md53792b102b5d0139ee9cd15852e457be2.EditorsRenderer
+biocare.droid.renderrer.EditorsRenderer;md53792b102b5d0139ee9cd15852e457be2.EditorsRenderer
 ImageCircle.Forms.Plugin.Droid.ImageCircleRenderer, ImageCircle.Forms.Plugin.Android;md5f99670a967ca5f40091da02b64448d9f.ImageCircleRenderer
 ImageCircle.Forms.Plugin.Droid.ImageCircleRenderer, ImageCircle.Forms.Plugin.Android, Version=1.8.1.0, Culture=neutral, PublicKeyToken=null;md5f99670a967ca5f40091da02b64448d9f.ImageCircleRenderer
 ImageCircle.Forms.Plugin.Droid.ImageCircleRenderer;md5f99670a967ca5f40091da02b64448d9f.ImageCircleRenderer

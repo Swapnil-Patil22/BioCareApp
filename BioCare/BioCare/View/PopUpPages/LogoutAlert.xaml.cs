@@ -15,21 +15,36 @@ namespace BioCare.View.PopUpPages
             InitializeComponent();
         }
 
-        void NoButton_Clicked(object sender, System.EventArgs e)
+       async void NoButton_Clicked(object sender, System.EventArgs e)
         {
-            CloseAllPopup();
+            var currentpage = this;
+            await Navigation.RemovePopupPageAsync(currentpage);
+            closebtn.IsEnabled = false;
+            yesbtn.IsEnabled = false;
+            nobtn.IsEnabled = false;
+            //await Navigation.PopAllPopupAsync();
             App.Current.MainPage = new MasterPage(new DashBoardPage());
         }
 
-        void YesButton_Clicked(object sender, System.EventArgs e)
+        async void YesButton_Clicked(object sender, System.EventArgs e)
         {
-            CloseAllPopup();
+            var currentpage = this;
+            await Navigation.RemovePopupPageAsync(currentpage);
+            closebtn.IsEnabled = false;
+            yesbtn.IsEnabled = false;
+            nobtn.IsEnabled = false;
+            //await Navigation.PopAllPopupAsync();
             App.Current.MainPage = new NavigationPage(new MainPage());
         }
 
-        void CloseButton_Tapped(object sender, System.EventArgs e)
+        async void CloseButton_Tapped(object sender, System.EventArgs e)
         {
-            CloseAllPopup();
+            var currentpage = this;
+            await Navigation.RemovePopupPageAsync(currentpage);
+            closebtn.IsEnabled = false;
+            yesbtn.IsEnabled = false;
+            nobtn.IsEnabled = false;
+            //CloseAllPopup();
         }
 
         private async void CloseAllPopup()

@@ -278,18 +278,37 @@ namespace BioCare.View.SubMenu
 
 
 
-        private async Task btnCompleteRConfirm_ClickedAsync(object sender, EventArgs e)
+        private void btnCompleteRConfirm_ClickedAsync(object sender, EventArgs e)
         {
             // Navigation.PushAsync(new MasterPage (new ReminderPage()));
 
 
             // Navigation.PushAsync(new ReminderPageSelectedList(sender as ReminderModel));
 
-            for (var counter = 1; counter < 1; counter++)
-            {
-                Navigation.RemovePage(Navigation.NavigationStack[Navigation.NavigationStack.Count]);
-            }
-            await Navigation.PopAsync();
+            //for (var counter = 1; counter < 1; counter++)
+            //{
+            //    Navigation.RemovePage(Navigation.NavigationStack[Navigation.NavigationStack.Count]);
+            //}
+            ERNum.IsVisible = false;
+            //ERName.IsVisible = false;
+            ERBNo.IsVisible = false;
+            ERDate.IsVisible = false;
+            ERTime.IsVisible = false;
+            ERTitle.IsVisible = false;
+            ERDescription.IsVisible = false;
+            btnCompleteRConfirm.IsVisible = false;
+            completeCloseRImage.IsVisible = false;
+
+            // RName.IsVisible = true;
+            RNum.IsVisible = true;
+            RBNo.IsVisible = true;
+            RDate.IsVisible = true;
+            RTime.IsVisible = true;
+            RTitle.IsVisible = true;
+            RDescription.IsVisible = true;
+            editRImage.IsVisible = true;
+
+            //await Navigation.PopAsync();
 
         }
     }

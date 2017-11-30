@@ -11,7 +11,7 @@
                 <Grid BackgroundColor="White">
                     <Label Text="Please enter your remarks." x:Name="Remarkplaceholder" Margin="5,5,0,0" TextColor="Gray" FontSize="Medium" />
                     <!--<Entry  Placeholder=" " BackgroundColor="Fuchsia"  />-->
-                    <Editor x:Name="Feedbackeditor" VerticalOptions="FillAndExpand" TextChanged="Handle_TextChanged" />
+                    <Editor x:Name="Feedbackeditor"  VerticalOptions="FillAndExpand" TextChanged="Handle_TextChanged" />
                     
 
                 </Grid>

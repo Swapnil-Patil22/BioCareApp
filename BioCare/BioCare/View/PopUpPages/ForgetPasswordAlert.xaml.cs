@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using Rg.Plugins.Popup.Extensions;
 using Rg.Plugins.Popup.Pages;
+using Rg.Plugins.Popup.Services;
 using Xamarin.Forms;
 
 namespace BioCare.View.PopUpPages
@@ -14,20 +15,22 @@ namespace BioCare.View.PopUpPages
             InitializeComponent();
         }
 
-        void Ok_ButtonClicked(object sender, System.EventArgs e)
+        async void Ok_ButtonClicked(object sender, System.EventArgs e)
         {
-            CloseAllPopup();
-            App.Current.MainPage = new NavigationPage(new SignInPage());
+            var currentpage = this;
+            await Navigation.RemovePopupPageAsync(currentpage);
+            await App.Current.MainPage.Navigation.PopToRootAsync();
         }
 
-        void CloseButton_Tapped(object sender, System.EventArgs e)
+        async void CloseButton_Tapped(object sender, System.EventArgs e)
         {
-            CloseAllPopup();
+            var currentpage = this;
+            await Navigation.RemovePopupPageAsync(currentpage);
         }
 
         private async void CloseAllPopup()
         {
-            await Navigation.PopAllPopupAsync();
+            await Application.Current.MainPage.Navigation.PopAllPopupAsync();
         }
         protected override void OnAppearing()
         {

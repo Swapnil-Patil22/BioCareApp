@@ -66,3 +66,4 @@
 /Users/apple/Downloads/Biocare-App-master/BioCare/BioCare/obj/Debug/BioCare.View.SubMenu.EquipmentListPage.xaml.g.cs
 /Users/apple/Downloads/Biocare-App-master/BioCare/BioCare/obj/Debug/BioCare.dll
 /Users/apple/Downloads/Biocare-App-master/BioCare/BioCare/obj/Debug/BioCare.pdb
+/Users/apple/Downloads/Biocare-App-master/BioCare/BioCare/obj/Debug/BioCare.csprojResolveAssemblyReference.cache

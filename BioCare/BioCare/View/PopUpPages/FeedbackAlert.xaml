@@ -5,7 +5,7 @@
              xmlns:animations="clr-namespace:Rg.Plugins.Popup.Animations;assembly=Rg.Plugins.Popup"
              x:Class="BioCare.View.PopUpPages.FeedbackAlert">
 
-    <pages:PopupPage.Animation>
+    <!--<pages:PopupPage.Animation>
         <animations:ScaleAnimation 
           PositionIn="Center"
           PositionOut="Center"
@@ -16,12 +16,12 @@
           EasingIn="SinOut"
           EasingOut="SinIn"
           HasBackgroundAnimation="True"/>
-  </pages:PopupPage.Animation>
+  </pages:PopupPage.Animation>-->
 
     <StackLayout VerticalOptions="Center" Spacing="15" Margin="30,0" BackgroundColor="White">
         <StackLayout Orientation="Horizontal" HeightRequest="50" Padding="20,5,10,0"  BackgroundColor="#0E197C">
             <Label Text="Feedback Confirmation" FontSize="Large" VerticalOptions="Center" HorizontalOptions="Start" TextColor="White" />
-            <Label Text="X" FontSize="Large" TextColor="White" VerticalOptions="Start" HorizontalOptions="EndAndExpand">
+            <Label x:Name="closebtn" IsEnabled="true" Text="X" FontSize="Large" TextColor="White" VerticalOptions="Start" HorizontalOptions="EndAndExpand">
                 <Label.GestureRecognizers>
                     <TapGestureRecognizer Tapped="CloseButton_Tapped"/>
                 </Label.GestureRecognizers>
@@ -29,7 +29,7 @@
         </StackLayout>
 
         <Label Text="Your feedback has been successfully submitted" LineBreakMode="CharacterWrap" Margin="10,0,10,0"/>
-        <Button Text="OK" Clicked="Ok_ButtonClicked" HorizontalOptions="End" WidthRequest="60" Margin="0,0,20,5" BackgroundColor="#0E197C" TextColor="White"/>
+        <Button x:Name="okbtn" IsEnabled="true" Text="OK" Clicked="Ok_ButtonClicked" HorizontalOptions="End" WidthRequest="60" Margin="0,0,20,5" BackgroundColor="#0E197C" TextColor="White"/>
     </StackLayout>
     
 </pages:PopupPage>

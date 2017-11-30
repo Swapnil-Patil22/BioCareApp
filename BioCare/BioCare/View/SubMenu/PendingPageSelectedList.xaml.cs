@@ -13,6 +13,7 @@ namespace BioCare.View.SubMenu
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class PendingPageSelectedList : ContentPage
 	{
+        bool hamburgertapped;
         public PendingPageSelectedList()
         {
             InitializeComponent();
@@ -20,7 +21,7 @@ namespace BioCare.View.SubMenu
         public PendingPageSelectedList (BookingModel item)
 		{
 			InitializeComponent ();
-
+            hamburgertapped = false;
             //ID.Text = item.Id.ToString();
             BNo.Text = item.BookingNo;
             ADT.Text = item.AppointmentDateTime;
@@ -44,22 +45,38 @@ namespace BioCare.View.SubMenu
             var tapGestureRecognizer = new TapGestureRecognizer();
             tapGestureRecognizer.Tapped += (s, e) => {
                 // handle the tap
-                Navigation.PushAsync(new EquipmentListPage());
-               
+                if(!hamburgertapped)
+                {
+                    //HamBurgerImg.IsEnabled = false;
+                    Navigation.PushAsync(new EquipmentListPage());
+                    //HamBurgerImg.IsEnabled = true;
+                    hamburgertapped = true;
+                }
+
             };
+            tapGestureRecognizer.NumberOfTapsRequired = 1;
             HamBurgerImg.GestureRecognizers.Add(tapGestureRecognizer);
 
+
         }
 
-        private void StartWork_OnClicked(object sender, EventArgs e)
+        private async void StartWork_OnClicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new StartWorkPage());
+            btnPendingStart.IsEnabled = false;
+            await Navigation.PushAsync(new StartWorkPage());
+            btnPendingStart.IsEnabled = true;
         }
-
 
         private void BNo_Focused(object sender, FocusEventArgs e)
         {
    
+        }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+
+            hamburgertapped = false;
         }
     }
 }

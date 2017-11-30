@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Paths>
-  <Jars>obj/Debug/__library_projects__/FormsViewGroup/library_project_imports/formsviewgroup.jar;/Users/apple/Downloads/Biocare-App-master/BioCare/BioCare.Android/obj/Debug/__library_projects__/FormsViewGroup/library_project_imports/formsviewgroup.jar;/Users/apple/Downloads/Biocare-App-master/BioCare/BioCare.Android/obj/Debug/__library_projects__/Syncfusion.SfCalendar.Android/library_project_imports/bin/SfCalendar.Android.jar</Jars>
+  <Jars>/Users/apple/Downloads/Biocare-App-master/BioCare/BioCare.Android/obj/Debug/__library_projects__/FormsViewGroup/library_project_imports/formsviewgroup.jar;/Users/apple/Downloads/Biocare-App-master/BioCare/BioCare.Android/obj/Debug/__library_projects__/Syncfusion.SfCalendar.Android/library_project_imports/bin/SfCalendar.Android.jar</Jars>
   <ResolvedResourceDirectories>
     <ResolvedResourceDirectory>/Users/apple/Downloads/Biocare-App-master/BioCare/BioCare.Android/obj/Debug/__library_projects__/ImageCircle.Forms.Plugin.Android/library_project_imports/res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>/Users/apple/Downloads/Biocare-App-master/BioCare/BioCare.Android/obj/Debug/__library_projects__/Plugin.FilePicker/library_project_imports/res</ResolvedResourceDirectory>

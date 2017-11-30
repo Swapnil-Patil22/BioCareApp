@@ -21,7 +21,7 @@
     <StackLayout VerticalOptions="Center" Spacing="15" Margin="30,0" BackgroundColor="White">
         <StackLayout Orientation="Horizontal" HeightRequest="50" Padding="20,5,10,0" BackgroundColor="#0E197C">
             <Label Text="Confirm" FontSize="Large" VerticalOptions="Center" HorizontalOptions="Start" TextColor="White" />
-            <Label Text="X" FontSize="Large" TextColor="White" VerticalOptions="Start" HorizontalOptions="EndAndExpand">
+            <Label  x:Name="closebtn" IsEnabled="true" Text="X" FontSize="Large" TextColor="White" VerticalOptions="Start" HorizontalOptions="EndAndExpand">
                 <Label.GestureRecognizers>
                     <TapGestureRecognizer Tapped="CloseButton_Tapped"/>
                 </Label.GestureRecognizers>
@@ -30,8 +30,8 @@
 
         <Label Text="Are you sure you want to stop work?" HorizontalOptions="Center"/>
         <Grid >
-            <Button Grid.Column="1" Text="Cancel" Clicked="CancelButton_Clicked" HorizontalOptions="End" Margin="0,0,0,5" WidthRequest="80" BackgroundColor="#0E197C" TextColor="White" />
-            <Button Grid.Column="2" Clicked="OkButton_Clicked" Text="OK" HorizontalOptions="End" WidthRequest="80" Margin="0,0,10,5" BackgroundColor="#0E197C" TextColor="White"/>
+            <Button x:Name="cancelbtn" IsEnabled="true" Grid.Column="1" Text="Cancel" Clicked="CancelButton_Clicked" HorizontalOptions="End" Margin="0,0,0,5" WidthRequest="80" BackgroundColor="#0E197C" TextColor="White" />
+            <Button x:Name="okbtn" IsEnabled="true" Grid.Column="2" Clicked="OkButton_Clicked" Text="OK" HorizontalOptions="End" WidthRequest="80" Margin="0,0,10,5" BackgroundColor="#0E197C" TextColor="White"/>
         </Grid>
     </StackLayout>
     

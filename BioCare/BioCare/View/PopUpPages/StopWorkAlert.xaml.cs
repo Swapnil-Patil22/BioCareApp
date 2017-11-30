@@ -15,21 +15,32 @@ namespace BioCare.View.PopUpPages
             InitializeComponent();
         }
 
-        void CancelButton_Clicked(object sender, System.EventArgs e)
+       async void CancelButton_Clicked(object sender, System.EventArgs e)
         {
-            CloseAllPopup();
+            var currentpage = this;
+            await Navigation.RemovePopupPageAsync(currentpage);
+            closebtn.IsEnabled = false;
+            cancelbtn.IsEnabled = false;
+            okbtn.IsEnabled = false;
         }
 
-        void OkButton_Clicked(object sender, System.EventArgs e)
+        async void OkButton_Clicked(object sender, System.EventArgs e)
         {
-            CloseAllPopup();
+            var currentpage = this;
+            await Navigation.RemovePopupPageAsync(currentpage);
+            closebtn.IsEnabled = false;
+            cancelbtn.IsEnabled = false;
+            okbtn.IsEnabled = false;
             MessagingCenter.Send<StopWorkAlert>(this, "OkButtonClicked");
-            // App.Current.MainPage = new MasterPage(new DashBoardPage());
         }
 
-        void CloseButton_Tapped(object sender, System.EventArgs e)
+        async void CloseButton_Tapped(object sender, System.EventArgs e)
         {
-            CloseAllPopup();
+            var currentpage = this;
+            await Navigation.RemovePopupPageAsync(currentpage);
+            closebtn.IsEnabled = false;
+            cancelbtn.IsEnabled = false;
+            okbtn.IsEnabled = false;
         }
 
         private async void CloseAllPopup()

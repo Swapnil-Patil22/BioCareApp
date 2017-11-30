@@ -3,6 +3,7 @@
   <ManifestDocuments>
     <ManifestDocument>obj/Debug/__library_projects__/Syncfusion.SfCalendar.Android/library_project_imports/AndroidManifest.xml</ManifestDocument>
     <ManifestDocument>obj/Debug/__library_projects__/Syncfusion.SfCalendar.Android/library_project_imports/bin/aapt/AndroidManifest.xml</ManifestDocument>
+    <ManifestDocument>obj/Debug/__library_projects__/Syncfusion.SfCalendar.Android/library_project_imports/manifest/AndroidManifest.xml</ManifestDocument>
   </ManifestDocuments>
   <NativeLibraries />
   <Jars>
