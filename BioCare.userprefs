@@ -1,11 +1,12 @@
 ﻿<Properties StartupConfiguration="{93233AD1-5531-474F-AE96-A15DD5F48324}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="BioCare/BioCare/View/SubMenu/CompletedBookingEquipmentPage.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BioCare/BioCare/View/SubMenu/CompletePageSelectedList.xaml.cs">
     <Files>
-      <File FileName="BioCare/BioCare/View/SubMenu/ProfilePage.xaml" Line="57" Column="108" />
-      <File FileName="BioCare/BioCare/View/SubMenu/CompletedBookingEquipmentPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="BioCare/BioCare/View/SubMenu/CompletePageSelectedList.xaml" Line="117" Column="56" />
+      <File FileName="BioCare/BioCare/View/SubMenu/CompletePageSelectedList.xaml.cs" Line="106" Column="9" />
+      <File FileName="BioCare/BioCare/View/SubMenu/PendingPageSelectedList.xaml.cs" Line="75" Column="9" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.BioCare.Android PreferredExecutionTarget="Android.Android_Accelerated_Nougat" />
+  <MonoDevelop.Ide.ItemProperties.BioCare.Android PreferredExecutionTarget="Android.ZY223K9G5Z" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>

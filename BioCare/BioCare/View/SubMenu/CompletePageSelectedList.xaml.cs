@@ -13,11 +13,12 @@ namespace BioCare.View.SubMenu
 	public partial class CompletePageSelectedList : ContentPage
 	{
         private BookingModel bookingModel;
-
+        bool hamburgertapped;
         public CompletePageSelectedList (BookingModel item)
 		{
 			InitializeComponent ();
 
+            hamburgertapped = false;
             //ID.Text = item.Id.ToString();
             BNo.Text = item.BookingNo;
             ADT.Text = item.AppointmentDateTime;
@@ -40,9 +41,16 @@ namespace BioCare.View.SubMenu
             var tapGestureRecognizer = new TapGestureRecognizer();
             tapGestureRecognizer.Tapped += (s, e) => {
                 // handle the tap
-                Navigation.PushAsync(new CompletedBookingEquipmentPage());
+                if (!hamburgertapped)
+                {
+                    //HamBurgerImg.IsEnabled = false;
+                    Navigation.PushAsync(new EquipmentListPage());
+                    //HamBurgerImg.IsEnabled = true;
+                    hamburgertapped = true;
+                }
 
             };
+            tapGestureRecognizer.NumberOfTapsRequired = 1;
             HamBurgerImg.GestureRecognizers.Add(tapGestureRecognizer);
 
             //var tapGestureRecognizer = new TapGestureRecognizer();
@@ -86,7 +94,16 @@ namespace BioCare.View.SubMenu
             //};
             //completeCloseImage.GestureRecognizers.Add(ClosetapGestureRecognizer);
 
+
         }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+
+            hamburgertapped = false;
+        }
+
 
     }
 }

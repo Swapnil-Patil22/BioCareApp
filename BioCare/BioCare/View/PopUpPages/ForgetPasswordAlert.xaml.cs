@@ -28,10 +28,6 @@ namespace BioCare.View.PopUpPages
             await Navigation.RemovePopupPageAsync(currentpage);
         }
 
-        private async void CloseAllPopup()
-        {
-            await Application.Current.MainPage.Navigation.PopAllPopupAsync();
-        }
         protected override void OnAppearing()
         {
             base.OnAppearing();

@@ -22,7 +22,6 @@ namespace BioCare.View.PopUpPages
             closebtn.IsEnabled = false;
             yesbtn.IsEnabled = false;
             nobtn.IsEnabled = false;
-            //await Navigation.PopAllPopupAsync();
             App.Current.MainPage = new MasterPage(new DashBoardPage());
         }
 
@@ -33,7 +32,6 @@ namespace BioCare.View.PopUpPages
             closebtn.IsEnabled = false;
             yesbtn.IsEnabled = false;
             nobtn.IsEnabled = false;
-            //await Navigation.PopAllPopupAsync();
             App.Current.MainPage = new NavigationPage(new MainPage());
         }
 
@@ -44,12 +42,6 @@ namespace BioCare.View.PopUpPages
             closebtn.IsEnabled = false;
             yesbtn.IsEnabled = false;
             nobtn.IsEnabled = false;
-            //CloseAllPopup();
-        }
-
-        private async void CloseAllPopup()
-        {
-            await Navigation.PopAllPopupAsync();
         }
 
         protected override void OnAppearing()

@@ -33,11 +33,6 @@ namespace BioCare.View.PopUpPages
             okbtn.IsEnabled = false;
         }
 
-        private async void CloseAllPopup()
-        {
-            await Navigation.PopAllPopupAsync();
-        }
-
         protected override void OnAppearing()
         {
             base.OnAppearing();

@@ -5,10 +5,8 @@
              xmlns:animations="clr-namespace:Rg.Plugins.Popup.Animations;assembly=Rg.Plugins.Popup" 
              x:Class="BioCare.View.PopUpPages.LogoutAlert">
     
-    <!-- Animations -->
-
-
     <StackLayout VerticalOptions="Center" Spacing="15" Margin="30,0" BackgroundColor="White">
+
         <StackLayout Orientation="Horizontal" HeightRequest="50" Padding="20,5,10,0"  BackgroundColor="#0E197C">
             <Label Text="Logout" FontSize="Large" VerticalOptions="Center" HorizontalOptions="Start" TextColor="White" />
             <Label x:Name="closebtn" IsEnabled="true" Text="X" FontSize="Large" TextColor="White" VerticalOptions="Start" HorizontalOptions="EndAndExpand">
@@ -23,7 +21,6 @@
             <Button x:Name="nobtn" IsEnabled="true" Grid.Column="1" Text="No" Clicked="NoButton_Clicked" Margin="0,0,0,5" HorizontalOptions="End" WidthRequest="60" BackgroundColor="#0E197C" TextColor="White" />
             <Button x:Name="yesbtn" IsEnabled="true" Grid.Column="2" Text="Yes" Clicked="YesButton_Clicked" HorizontalOptions="End" WidthRequest="60" Margin="0,0,20,5" BackgroundColor="#0E197C" TextColor="White"/>
         </Grid>
+        
     </StackLayout>
-    
-    
 </pages:PopupPage>
