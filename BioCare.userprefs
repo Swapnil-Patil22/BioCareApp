@@ -6,7 +6,7 @@
       <File FileName="BioCare/BioCare/View/SubMenu/PendingPageSelectedList.xaml.cs" Line="75" Column="9" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.BioCare.Android PreferredExecutionTarget="Android.ZY223K9G5Z" />
+  <MonoDevelop.Ide.ItemProperties.BioCare.Android PreferredExecutionTarget="Android.Android_Accelerated_Nougat" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
